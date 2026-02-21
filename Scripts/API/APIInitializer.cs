@@ -16,7 +16,7 @@ namespace YallaCatch.API
             // Create API Client first
             CreateSingleton<APIClient>("APIClient", go =>
             {
-                // Configure base URL if needed
+                APIClient.Instance.SetBaseUrl(baseUrl);
             });
 
             // Create all API class singletons
@@ -46,3 +46,4 @@ namespace YallaCatch.API
         }
     }
 }
+

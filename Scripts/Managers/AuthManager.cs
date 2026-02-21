@@ -215,7 +215,7 @@ namespace YallaCatch.Managers
             // Update GameManager with user data
             if (GameManager.Instance != null)
             {
-                GameManager.Instance.SetPlayerData(user.displayName, user.AvailablePoints, int.Parse(user.level ?? "1"));
+                GameManager.Instance.SetPlayerData(user.displayName, user.AvailablePoints, (int.TryParse(user.level, out int lvl) ? lvl : 1));
             }
 
             // Navigate to main menu
@@ -319,3 +319,4 @@ namespace YallaCatch.Managers
         #endregion
     }
 }
+

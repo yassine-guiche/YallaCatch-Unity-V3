@@ -78,6 +78,12 @@ namespace YallaCatch.API
         public string UserId => userId;
         public string BaseUrl => baseUrl;
 
+        public void SetBaseUrl(string url)
+        {
+            baseUrl = url.TrimEnd('/');
+            Debug.Log($"[APIClient] Base URL updated to: {baseUrl}");
+        }
+
         #endregion
 
         #region Token Management
@@ -369,3 +375,4 @@ namespace YallaCatch.API
 
     #endregion
 }
+
