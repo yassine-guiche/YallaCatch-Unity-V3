@@ -1,0 +1,21 @@
+{
+  "apiBaseUrl": "http://localhost:3000/api/v1",
+  "wsUrl": "ws://localhost:3000",
+  "mapTileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "captureRadius": 50,
+  "mapDefaultZoom": 15,
+  "mapMaxZoom": 19,
+  "mapMinZoom": 10,
+  "refreshInterval": 30,
+  "locationUpdateInterval": 1.0,
+  "locationDesiredAccuracy": 10.0,
+  "locationDistanceFilter": 5.0,
+  "arEnabled": true,
+  "adMobEnabled": true,
+  "offlineModeEnabled": true,
+  "maxOfflineQueueSize": 100,
+  "sessionTimeoutMinutes": 30,
+  "prizeDetectionRadius": 200,
+  "heatmapRefreshSeconds": 60,
+  "debugMode": false
+}
